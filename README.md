@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+## Sobre
+Desafio prático da etapa seleção de candidatos a vagas de desenvolvimento frontend com React na Alelo. Este projeto foi construído com [React](https://github.com/facebook/create-react-app). Por favor, não atualize a versão do projeto e das bibliotecas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objetivo
+Avaliar sua capacidade analítica diante de problemas que podem ser encontrados no dia-a-dia da empresa, conhecer um pouco da sua experiência com React e TypeScript, a aplicação de conceitos como mobile first, responsividade e websemântica, além do uso de boas práticas e design de software.
 
-## Available Scripts
+## Orientações
+Realize um fork do projeto, clone-o e execute-o em sua máquina local. Para o teste, você pode utilizar a IDE de sua preferência. Avalie o código do projeto e se julgar necessário, faça as devidas mudanças e envie um pull request para nós!
 
-In the project directory, you can run:
+## Desafios
+Os desafios estão divididos em três pontos:
+
+[b]Estilização e websemântica:[/b] Deixamos um Layout para que você possa implementar (os arquivos estão disponíveis dentro do diretório [b]src/assets[/b]), é super simples e rápido de fazer :);
+
+[b]Conhecimento do framework e consumo de dados por serviços:[/b] Para conhecermos melhor o seu jeito de codar, você pode fazer um um CRUD simples com a [fakestore](https://fakestoreapi.com/), deixamos um TODO no arquivo para ajudar :);
+
+[b]Boas práticas e padrões de projeto:[/b] Pode haver alguns desafios no código, queremos conhecer de perto as suas soluções para estes problemas; 
+
+[b]Não se preocupe em realizar todos os steps propostos, faça os quais você se sentir mais confortável para realizar.[/b]
+
+## assets
+![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_desktop.png?raw=true)
+
+![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_mobile.png?raw=true)# Getting Started with Create React App
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Execute o app em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executar o test runner em modo interativo.\
+veja mais em [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds o app para produção acesse o diretório `build`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+veja mais em [deployment](https://facebook.github.io/create-react-app/docs/deployment).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Saiba mais
 
-### `yarn eject`
+Você pode aprender mais em [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+para aprender React, veja mais em [React documentation](https://reactjs.org/).

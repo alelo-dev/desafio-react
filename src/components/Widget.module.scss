@@ -1,0 +1,37 @@
+.Widget {
+    display: block;
+    max-width: 380px;
+    min-width: 250px;
+    margin: 10px;
+    height: fit-content;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    float: left;
+}
+
+#promo {
+    background-color: greenyellow !important;
+    text-align: center;
+}
+
+#price {
+    background-color:yellowgreen !important;
+    text-align: center;
+}
+
+#card {
+    background-color:gainsboro !important;
+    text-align: center;
+}
+
+#info {
+    background-color: blue !important;
+    text-align: center;
+    color: white;
+}
+
+#info > a {
+    color: white;
+} 

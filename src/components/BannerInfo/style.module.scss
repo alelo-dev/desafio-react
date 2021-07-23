@@ -1,0 +1,8 @@
+@import "../../assets/styles/colors.scss";
+
+.banner {
+  &.left {
+    color: $color-black;
+    background: $color-primary;
+  }
+}

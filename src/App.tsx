@@ -1,11 +1,7 @@
-import React from 'react';
-import './App.css';
-import MainPage from './container/MainPage';
+import Main from "./pages/Main";
 
-function App() {
-  return (
-    <MainPage />
-  );
-}
+const App: React.FC = () => {
+  return <Main />;
+};
 
 export default App;

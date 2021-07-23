@@ -1,0 +1,17 @@
+@import "../../assets/styles/colors.scss";
+
+.banner {
+  &.right {
+    color: $color-white;
+    background: $color-secondary;
+
+    h2 {
+      color: $color-primary;
+    }
+
+    .help {
+      color: $color-secondary;
+      background: $color-primary;
+    }
+  }
+}

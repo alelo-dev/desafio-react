@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.pagamento {
+   
+}
+
+.header {
+    margin-left: 30%;
+    width: 100%;
+}
+
+.promocoes {
+    width: 100%;
+    margin-top: 5%;
+    padding-left: 22%;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    float: left;
+    
+}
+
+.produtos {
+    margin-top: 10%;
+}
+
+.tabela {
+    display: block;
+    overflow-y: scroll;
+    margin-left: 20%;
+    margin-top: 1%;
+    width: 60%;
+    height: 300px;
+}
+
+.title {
+    display: block;
+    margin-left: 21%;
+    margin-top: 8%;
+    width: 60%;
+    height: 50px;
+    color: #0E7F61;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.button {
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0E7F61;
+}

@@ -1,4 +1,4 @@
-## Sobre
+# Sobre
 Desafio prático da etapa seleção de candidatos a vagas de desenvolvimento frontend com React na Alelo. Este projeto foi construído com [React](https://github.com/facebook/create-react-app). Por favor, não atualize a versão do projeto e das bibliotecas.
 
 ## Objetivo
@@ -10,18 +10,18 @@ Realize um fork do projeto, clone-o e execute-o em sua máquina local. Para o te
 ## Desafios
 Os desafios estão divididos em três pontos:
 
-[b]Estilização e websemântica:[/b] Deixamos um Layout para que você possa implementar (os arquivos estão disponíveis dentro do diretório [b]src/assets[/b]), é super simples e rápido de fazer :);
+**Estilização e websemântica:** Deixamos um Layout para que você possa implementar (os arquivos estão disponíveis dentro do diretório **src/assets**), é super simples e rápido de fazer :);
 
-[b]Conhecimento do framework e consumo de dados por serviços:[/b] Para conhecermos melhor o seu jeito de codar, você pode fazer um um CRUD simples com a [fakestore](https://fakestoreapi.com/), deixamos um TODO no arquivo para ajudar :);
+**Conhecimento do framework e consumo de dados por serviços:** Para conhecermos melhor o seu jeito de codar, você pode fazer um CRUD simples com a [fakestore](https://fakestoreapi.com/), deixamos um TODO no arquivo para ajudar :);
 
-[b]Boas práticas e padrões de projeto:[/b] Pode haver alguns desafios no código, queremos conhecer de perto as suas soluções para estes problemas; 
+**Boas práticas e padrões de projeto:** Pode haver alguns desafios no código, queremos conhecer de perto as suas soluções para estes problemas; 
 
-[b]Não se preocupe em realizar todos os steps propostos, faça os quais você se sentir mais confortável para realizar.[/b]
+**Não se preocupe em realizar todos os steps propostos, faça os quais você se sentir mais confortável para realizar.**
 
 ## assets
 ![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_desktop.png?raw=true)
 
-![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_mobile.png?raw=true)# Getting Started with Create React App
+![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_mobile.png?raw=true)
 
 ## Scripts Disponíveis
 
@@ -39,7 +39,7 @@ veja mais em [running tests](https://facebook.github.io/create-react-app/docs/ru
 
 ### `yarn build`
 
-Builds o app para produção acesse o diretório `build`
+Builds do app para produção, acesse o diretório `build`
 
 veja mais em [deployment](https://facebook.github.io/create-react-app/docs/deployment).
 

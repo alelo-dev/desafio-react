@@ -1,14 +1,72 @@
-.MainPage {}
+.MainPage {
+    
+    display:flex;
+    align-items:center;
+    justify-content: center;    
+    background: #f7f7f7;
+       
+    .App {
 
-.pagamento {
-    float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 80%;
+        background: #FFF;       
+        box-shadow: 5px 10px 8px #b4b4b4;
+        margin: 32px 0px;
+        border-radius: 10px;
+
+        //height: 98%;
+
+
+        @media (max-width: 768px) {
+            width: 95%
+        }
+    }
+    
+    .header {
+        display: flex;        
+    }
+
+    .container {        
+        //display: flex;
+        width: 100%;
+
+        h5 {
+            color: #0e7f61;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px 16px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+    
+    .footer {    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        width: 98%;
+    
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+       
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
 }
 
-.pagamento > p {
-    text-align: center;
+.errorMsg {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #0e7f61;
 }
 
-.promocoes {
-    float: left;
-    width: 100%;
-}
+

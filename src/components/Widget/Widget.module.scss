@@ -1,0 +1,105 @@
+.Widget {
+    display: block;
+    max-width: 380px;
+    min-width: 250px;
+    margin: 10px;
+    height: fit-content;
+    margin-top: 20px;
+    float: left;
+
+    .promo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0e7f61;
+        padding: 15px 10px;
+        border-radius: 5px;
+
+        h2 {
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+            font-size: 14px;
+            text-shadow: 1px 1px #585858;
+        }
+        
+        img {
+            width: 50px;
+            margin-left: 12px;
+        }
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #BDD753;
+        padding: 19px 10px;
+        border-radius: 5px;
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            text-align: center;
+            font-weight: bold;
+            color: #505050;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #0e7f61;
+        padding: 15px 10px;
+        border-radius: 5px;
+
+        h2 {
+            text-align: center;
+            color: #BDD753;            
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0 32px;
+            margin: 1px 1px;
+        }
+
+        p {
+            color: #FFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 1px 1px;
+        }
+
+        img {
+            width: 80px;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+#promo {
+    background-color: greenyellow !important;
+    text-align: center;
+}
+
+#price {
+    background-color:yellowgreen !important;
+    text-align: center;
+}
+
+#card {
+    background-color:gainsboro !important;
+    text-align: center;
+}
+
+#info {
+    background-color: blue !important;
+    text-align: center;
+    color: white;
+}
+
+#info > a {
+    color: white;
+}

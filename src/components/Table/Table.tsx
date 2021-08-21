@@ -15,8 +15,6 @@ interface ProductsProps{
 }
 
 const Table = ( {products}: ProductsProps ) => {
-
-  
   return (products.length > 0 ?
     <table className={styles.table}>      
       <thead>

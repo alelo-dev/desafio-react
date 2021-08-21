@@ -10,15 +10,36 @@ const MainPage = () => {
    *  */
 
   const { data, error, request } = useFetch();
+  const [products, setProducts ] = useState([]);
+  const [searchTerm, setSearchTerm ] = useState('');
 
   useEffect (() => {
     const url = 'https://fakestoreapi.com/products/?limit=5';
     const options = {
       method: "GET"
     };
-    request(url, options);    
+    request(url, options);
+    setProducts(data);
     
   }, [request]);
+
+  // searchProduct = ({ searchField }) => {
+  //   const results = products.filter(productsFilterd =>  {
+  //     return (
+  //       productsFilterd.title.toLo
+  //     )
+  //   }
+  // };
+
+  function searchProduct(searchTerm:String){
+    const productsFiltered  = data.filter((data:any) => {
+      console.log(data.title);
+      return data.title.search(searchTerm) != -1;
+    });
+    
+    setProducts(productsFiltered);
+  }
+      
 
   if(error) {
     return (
@@ -26,9 +47,9 @@ const MainPage = () => {
         Ocorreu um erro inesperado.
       </div>
     )
-  }
- 
-  if(data) { 
+  };
+
+  if(data) {     
     return (
       <div className={styles.MainPage} data-testid="MainPage">
         <div className={styles.App}>
@@ -38,7 +59,9 @@ const MainPage = () => {
   
           <div className={styles.container}>
             <h5>Conheça nossos produtos!</h5>
-            <Table products={data}></Table>             
+            <input type="text" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
+            <button type="button" onClick={ () => searchProduct(searchTerm) }>Pesquisar</button>
+            <Table products={products ? products : data}></Table>             
           </div>
   
           <div className={styles.footer}>
@@ -52,7 +75,9 @@ const MainPage = () => {
         </div>
       </div>
     );
-  }else return null
+  } else {
+    return null
+  }
 };
 
  

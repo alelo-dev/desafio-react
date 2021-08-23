@@ -1,72 +1,94 @@
 .MainPage {
-    
-    display:flex;
-    align-items:center;
-    justify-content: center;    
-    background: #f7f7f7;
-       
-    .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        width: 80%;
-        background: #FFF;       
-        box-shadow: 5px 10px 8px #b4b4b4;
-        margin: 32px 0px;
-        border-radius: 10px;
+    width: 80%;
+    background: #fff;
+    box-shadow: 5px 10px 8px #b4b4b4;
+    margin: 32px 0px;
+    border-radius: 10px;
 
-        //height: 98%;
-
-
-        @media (max-width: 768px) {
-            width: 95%
-        }
+    @media (max-width: 768px) {
+      width: 95%;
     }
-    
-    .header {
-        display: flex;        
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+
+    h5 {
+      color: #0e7f61;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 5px 16px;
+      font-weight: bold;
+      font-size: 12px;
     }
 
-    .container {        
-        //display: flex;
-        width: 100%;
+    .searchContainer {
+      display: flex;
+      input {
+        background: #f7f7f7;
+        border-radius: 4px;
+        margin: 5px 5px;
+        color: #696969;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        border: 1px solid #696969;
+      }
 
-        h5 {
-            color: #0e7f61;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 5px 16px;
-            font-weight: bold;
-            font-size: 12px;
-        }
+      button {
+        background: #0e7f61;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        border-radius: 4px;
+        margin: 5px 5px;
+        border: none;
+        padding: 5px 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #bdd753;
+        color: #0e7f61;
+      }
     }
-    
-    .footer {    
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: white;
-        width: 98%;
-    
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-        }
-       
-        @media screen and (min-width: 768px) {
-            flex-direction: row;
-        }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 98%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
     }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
 }
 
 .errorMsg {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: #0e7f61;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #0e7f61;
 }
-
-

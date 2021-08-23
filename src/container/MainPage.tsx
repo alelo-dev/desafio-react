@@ -1,76 +1,83 @@
-import React from 'react';
-import Widget from '../components/Widget';
-import styles from './MainPage.module.scss';
+import React, { useEffect, useState } from "react";
+import Widget from "../components/Widget/Widget";
+import styles from "./MainPage.module.scss";
+import Table from "../components/Table/Table";
+import useFetch from "../services/useFetch";
 
 const MainPage = () => {
-      /**
+  /**
    * TODO: criar um crud para buscar, listar, enviar e atualizar produtos da https://fakestoreapi.com/
-   *  */ 
-    const TableLines =  () => {
-      const arr: any = [];
+   *  */
 
-        products.forEach(
-        (p: any, index) => {
-          arr.push(                  
-            <tr key={index}>
-              <td>{p['name']}</td>
-              <td>{p['price']}</td>
-              <td>
-                  <button>Comprar</button>
-              </td>
-            </tr>
-          )}
-      )
+  const { data, error, request } = useFetch();
+  const [products, setProducts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
-      return arr;
-    }
-       
-    const products = [
-        {
-          name: 'produto 01',
-          price: 1234    
-        },
-        {
-          name: 'produto 02',
-          price: 1234    
-        },
-        {
-          name: 'produto 03',
-          price: 1234    
-        }
-    ];
+  useEffect(() => {
+    const url = "https://fakestoreapi.com/products/?limit=5";
+    const options = {
+      method: "GET",
+    };
+    request(url, options);
+    setProducts(data);
+  }, [request]);
 
-  return (
-    <div className={styles.MainPage} data-testid="MainPage">
+  function searchProduct(searchTerm: String) {
+    const productsFiltered = data.filter((data: any) => {
+      return data.title.search(searchTerm) != -1;
+    });
 
-      <div className="App">
-        <div className="promocoes">
-          <Widget widget="promo" />
+    setProducts(productsFiltered);
+  }
+
+  function cleanSearch() {
+    setProducts([]);
+  }
+
+  if (error) {
+    return <div className={styles.errorMsg}>Ocorreu um erro inesperado.</div>;
+  }
+
+  if (data) {
+    return (
+      <div className={styles.MainPage} data-testid="MainPage">
+        <div className={styles.App}>
+          <div className={styles.header}>
+            <Widget widget="promo" />
+          </div>
+
+          <div className={styles.container}>
+            <h5>Conheça nossos produtos!</h5>
+            <div className={styles.searchContainer}>
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+              />
+              <button type="button" onClick={() => searchProduct(searchTerm)}>
+                Pesquisar
+              </button>
+              <button type="button" onClick={cleanSearch}>
+                Limpar
+              </button>
+            </div>
+            <Table products={products.length > 0 ? products : data}></Table>
+          </div>
+
+          <div className={styles.footer}>
+            <div>
+              <Widget widget="card" />
+            </div>
+            <div>
+              <Widget widget="info" />
+            </div>
+          </div>
         </div>
-        
-        <div className="produtos">
-          <table>
-            <thead>
-              <tr>
-                  <td>Produto</td>
-                  <td>Preço</td>
-                  <td>Ações</td>
-              </tr>
-            </thead>
-            <tbody>
-            { TableLines() }
-            </tbody>
-          </table>
-        </div>
-            
-        <div className="promocoes">
-          <Widget widget="card" />
-          <Widget widget="info" />
-        </div>
-
       </div>
-    </div>
-  )
+    );
+  } else {
+    return null;
+  }
 };
 
 export default MainPage;

@@ -1,5 +1,16 @@
-.MainPage {}
-
+.MainPage {
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    max-width: 1024px;
+    margin: 2rem auto 2rem auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #B0B0B0;
+}
 .pagamento {
     float: right;
 }
@@ -11,4 +22,6 @@
 .promocoes {
     float: left;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }

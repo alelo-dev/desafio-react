@@ -1,0 +1,223 @@
+.tabela-alelo {
+    width:100%;
+  
+    table {
+      width:100%;
+      border-spacing: 0;
+  
+      thead {
+  
+        tr {
+  
+          th {
+            color: #282828;
+            font-size: 14px;
+            text-align: left;
+            text-transform: uppercase;
+            opacity: 0.7;
+            border-bottom: 2px solid #ededed;
+            padding: 24px 10px 24px 10px;
+            white-space: nowrap;
+  
+            &:first-child {
+              padding-left: 25px;
+            }
+            &:last-child {
+              padding-right: 24px;
+            }
+          }
+        }
+      }
+  
+      tbody {
+  
+        tr {
+  
+          &:hover {
+            background-color: #f3f3f3;
+          }
+  
+          td {
+            color: #282828;
+            font-size: 13px;
+            line-height: 19px;
+            padding: 16px 10px 16px 10px;
+            opacity: 0.7;
+            border-bottom: 2px solid #ededed;
+            white-space: nowrap;
+  
+            &:first-child {
+              padding-left: 25px;
+            }
+            &:last-child {
+              padding-right: 24px;
+            }
+            span.link {
+              color: #008060;
+              margin-left: 8px;
+              text-transform: uppercase;
+              text-decoration: underline;
+              font-weight: 700;
+              font-size: 12px;
+  
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            i {
+              color: #0E7F61;
+            }
+            a {
+              cursor: pointer;
+              white-space: nowrap;
+            }
+            .approve {
+              color: #0E7F61;
+            }
+            .decline {
+              color: #D4131D;
+            }
+            .positive {
+              color: #0E7F61;
+              font-weight: 700;
+  
+              &:before {
+                content: '\f0d8';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 700;
+                font-style: normal;
+                font-size: 12px;
+                margin-right: 6px;
+              }
+            }
+            .negative {
+              color: #D4131D;
+              font-weight: 700;
+  
+              &:before {
+                content: '\f0d7';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 700;
+                font-style: normal;
+                font-size: 12px;
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .oneIcon table thead tr th[title^="Toggle SortBy"]:not(:nth-last-child(n+2)) {
+      cursor: default!important;
+      span {
+        display:none;
+        cursor: default;
+      }
+    }
+    .oneIcon table tbody tr td:last-child {
+      width:40px;
+    }
+  
+    .twoIcons table thead tr th[title^="Toggle SortBy"]:not(:nth-last-child(n+3)) {
+      cursor: default!important;
+      span {
+        display:none;
+        cursor: default;
+      }
+    }
+    .twoIcons table tbody tr td:nth-last-child(-n+2) {
+      width:40px;
+    }
+  
+    .threeIcons table thead tr th[title^="Toggle SortBy"]:not(:nth-last-child(n+4)) {
+      cursor: default!important;
+      span {
+        display:none;
+        cursor: default;
+      }
+    }
+    .threeIcons table tbody tr td:nth-last-child(-n+3) {
+      width:40px;
+    }
+  
+    .selectable table thead tr th:first-child {
+      cursor: default!important;
+      span {
+        display:none;
+        cursor: default;
+      }
+    }
+    .selectable table thead tr th:first-child {
+      width: 58px!important;
+    }
+  
+    .pagination {
+      padding: 28px 22px 14px 25px;
+      display: flex;
+      justify-content: space-between;
+  
+      .totalSelector {
+        display: inline;
+        color: #282828;
+        opacity: 0.7;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        min-width: 280px;
+  
+        select {
+          border: none;
+          color: #008060;
+          font-family: 'Museo Sans';
+          font-weight: 700;
+          // text-transform: uppercase;
+          outline: 0;
+          margin: 0 16px 0 16px;
+        }
+      }
+  
+      .pageButtons {
+        flex-grow: 1;
+        text-align: center;
+  
+        button {
+          box-sizing: border-box;
+          background-color: #FFFFFF;
+          border: 1px solid #FFFFFF;
+          border-radius: 8px;
+          color: #008060;
+          cursor: pointer;
+          font-family: 'Museo Sans';
+          font-weight: 700;
+          font-size: 14px;
+          height: 30px;
+          margin: 0 4px 0 4px;
+          width: 31px;
+          outline: 0;
+  
+          &.active {
+            border: 1px solid #008060;
+          }
+        }
+      }
+  
+      .total {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #282828;
+        font-size: 14px;
+        font-weight: 300;
+        width:340px;
+  
+        span {
+          opacity: 0.7;
+          
+          strong {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }

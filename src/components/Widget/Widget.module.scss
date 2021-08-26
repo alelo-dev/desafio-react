@@ -1,0 +1,46 @@
+.Widget {
+    width:  25%;
+    height: 100px;
+    margin-top: 3%;
+    margin-right: 5%;
+    align-items: center;
+    // background-color: #0E7F61;
+    color: white;
+}
+
+
+.Promo {
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid black;
+    //margin-left: 30%;
+    border-radius: 5px;
+    padding: 30px;
+    width: 100%;
+    height: 70px;
+    background-color: #0E7F61;
+    display: flex;
+    float: left;
+}
+
+.Card {
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: #BDD753;
+    // border: 1px solid black;
+}
+
+.Info {
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+    background-color: #0E7F61;
+}

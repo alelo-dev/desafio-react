@@ -93,6 +93,7 @@ export const updateProduto = async (idProduto, title, price, description, image,
         .then(
             (result) => {
                 retorno = result;
+                console.log('RESULT :', result);
                 cb(retorno);
             },
             (error) => {

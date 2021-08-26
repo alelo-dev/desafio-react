@@ -5,7 +5,7 @@
 
 
 .header {
-    margin-left: 30%;
+    margin-left: 35%;
     width: 100%;
 }
 
@@ -51,4 +51,87 @@
     border-radius: 5px;
     border: none;
     background-color: #0E7F61;
+}
+
+.formEdicao {
+    width: 200px;
+    height: 100px;
+    padding-left: 80px;
+    padding-bottom: 80px;
+}
+
+.divForm {
+    margin-bottom: 20%;
+    width: 1000px;
+    flex-direction: row;
+    float: left;
+}
+
+.divButton {
+    width: 500px;
+    flex-direction: row;
+    float: left;
+}
+
+.input {
+    margin-right: 20px;
+    height: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #067C60;
+    border-radius: 5px;
+}
+
+.button {
+    width: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    border-width: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+    line-height: 21px;
+    padding: 11px 22px;
+    position: relative;
+    text-transform: uppercase;
+    white-space:nowrap;
+}
+
+.buttonGhost {
+    border-radius: 8px;
+    outline: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+    line-height: 21px;
+    padding: 11px 22px;
+    position: relative;
+    text-transform: uppercase;
+    white-space:nowrap;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #067C60;
+    color: #067C60;
+}
+
+@media screen and (max-width: 600px) {
+    .promocoes {
+        float: none;
+        width: 100%;
+        margin-top: 5%;
+        padding-left: 22%;
+        align-items: center;
+        height: 100px;        
+    }
 }

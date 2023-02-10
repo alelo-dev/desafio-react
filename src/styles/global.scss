@@ -1,0 +1,17 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-green: #bdd753;
+  --green: #0e7f61;
+  --dark-gray: #505050;
+  --gray: #696969;
+  --light-gray: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-gray);
+}

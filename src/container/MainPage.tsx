@@ -43,7 +43,12 @@ const MainPage = () => {
     <div className={styles.MainPage} data-testid="MainPage">
       <div className="App">
         <div className="promocoes">
-          <Widget widget="promo" />
+          <Widget color="green">
+            <div id="promo">
+              <h2> Faça seu cartão Alelo!! </h2>
+              <a href="#">Ver mais</a>
+            </div>
+          </Widget>
         </div>
 
         <div className="produtos">
@@ -60,8 +65,26 @@ const MainPage = () => {
         </div>
 
         <div className="promocoes">
-          <Widget widget="card" />
-          <Widget widget="info" />
+          <Widget color="light-green">
+            <div id="card">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </Widget>
+          <Widget color="green">
+            <div id="info">
+              <h2> Faça seu cartão Alelo hoje mesmo!! </h2>
+              <p>produtos em destaque</p>
+              <a href="#">Ver mais</a>
+            </div>
+          </Widget>
         </div>
       </div>
     </div>

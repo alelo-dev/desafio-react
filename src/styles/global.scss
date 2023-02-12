@@ -1,17 +1,40 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --light-green: #bdd753;
+  --dark-green: #015a43;
   --green: #0e7f61;
+  --light-green: #bdd753;
   --dark-gray: #505050;
   --gray: #696969;
   --light-gray: #f7f7f7;
+  --font: 'Verdana', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--light-gray);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--white);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
 }

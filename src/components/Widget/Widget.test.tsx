@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Widget from './Widget';
+import Widget from '.';
 
 describe('<Widget />', () => {
   it('should render the children', () => {

@@ -1,0 +1,32 @@
+.Button {
+  border-radius: 8px;
+  border: none;
+  color: var(--green);
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s;
+
+  &:global(.primary) {
+    color: var(--dark-green);
+    background-color: var(--light-green);
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--dark-green);
+    }
+  }
+
+  &:global(.text) {
+    background-color: transparent;
+
+    &:hover {
+      color: var(--dark-green);
+      background-color: var(--light-gray);
+    }
+  }
+}

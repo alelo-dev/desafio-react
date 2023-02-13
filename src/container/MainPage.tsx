@@ -1,6 +1,10 @@
 import React from 'react';
+
 import Widget from '../components/Widget';
 import styles from './MainPage.module.scss';
+import Cards from '../assets/cartoes.svg';
+import Phone from '../assets/phone.svg';
+import Button from '../components/Button';
 
 const MainPage = () => {
   /**
@@ -15,7 +19,7 @@ const MainPage = () => {
           <td>{p['name']}</td>
           <td>{p['price']}</td>
           <td>
-            <button>Comprar</button>
+            <Button variant="text">Comprar</Button>
           </td>
         </tr>
       );
@@ -41,13 +45,11 @@ const MainPage = () => {
 
   return (
     <div className={styles.MainPage} data-testid="MainPage">
-      <div className="App">
-        <div className="promocoes">
+      <main className={styles.Main}>
+        <div className={styles.MainHeader}>
           <Widget color="green">
-            <div id="promo">
-              <h2> Faça seu cartão Alelo!! </h2>
-              <a href="#">Ver mais</a>
-            </div>
+            <h1>Peça seu cartão Alelo!</h1>
+            <img src={Cards} alt="Alelo cards" />
           </Widget>
         </div>
 
@@ -64,29 +66,28 @@ const MainPage = () => {
           </table>
         </div>
 
-        <div className="promocoes">
+        <div className={styles.MainFooter}>
           <Widget color="light-green">
-            <div id="card">
+            <div className={styles.Info}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {`Aqui na Alelo, você lorem ipsum consectetur adipiscing elit.
+                Etiam convallis nisi quam, luctus blandit nisi lobortis quis.
+                Proin sem liaula. semoer id libero sit amet. auctor ullamcorper
+                dul!:)`}
               </p>
             </div>
           </Widget>
           <Widget color="green">
-            <div id="info">
-              <h2> Faça seu cartão Alelo hoje mesmo!! </h2>
-              <p>produtos em destaque</p>
-              <a href="#">Ver mais</a>
+            <div className={styles.Help}>
+              <h2>Precisando de ajuda?</h2>
+              <p>Fale com nosso time de atendimento!</p>
+              <Button>
+                <img src={Phone} alt="Phone icon" /> <span>Me Ajuda!</span>
+              </Button>
             </div>
           </Widget>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

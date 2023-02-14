@@ -1,0 +1,22 @@
+.Widget {
+  padding: 15px 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  text-align: center;
+
+  &:global(.left) {
+    text-align: left;
+  }
+
+  &:global(.right) {
+    text-align: right;
+  }
+
+  &:global(.green) {
+    background-color: var(--green);
+  }
+
+  &:global(.light-green) {
+    background-color: var(--light-green);
+  }
+}

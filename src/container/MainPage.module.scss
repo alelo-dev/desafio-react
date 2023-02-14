@@ -1,14 +1,106 @@
-.MainPage {}
-
-.pagamento {
-    float: right;
+.MainPage {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 8px;
 }
 
-.pagamento > p {
+.Main {
+  width: 100%;
+  max-width: 1140px;
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MainHeader {
+  padding: 6px;
+  margin-bottom: 16px;
+
+  & > div {
+    margin: 0 auto;
+    max-width: 540px;
     text-align: center;
+  }
 }
 
-.promocoes {
-    float: left;
-    width: 100%;
+.MainFooter {
+  padding: 10px 8px 12px;
+
+  & > div {
+    margin-bottom: 14px;
+  }
+}
+
+.Info,
+.Help {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Info {
+  p {
+    max-width: 462px;
+    margin: 0 auto;
+    color: var(--gray);
+    font-weight: bold;
+  }
+}
+
+.Help {
+  flex-direction: column;
+
+  h2,
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    color: var(--light-green);
+  }
+
+  p {
+    color: var(--white);
+    font-weight: bold;
+
+    margin-bottom: 8px;
+  }
+
+  button {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.Error {
+  color: var(--red);
+}
+
+@media (min-width: 768px) {
+  .MainHeader {
+    padding: 40px 16px 0;
+    margin-bottom: 100px;
+
+    & > div {
+      display: flex;
+      justify-content: center;
+
+      & h1 {
+        margin-right: 40px;
+      }
+    }
+  }
+  .MainFooter {
+    display: flex;
+    gap: 40px;
+    padding: 80px 16px 70px;
+
+    & > div {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  }
 }

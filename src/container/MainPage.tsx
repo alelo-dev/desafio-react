@@ -5,43 +5,52 @@ import styles from './MainPage.module.scss';
 import Cards from '../assets/cartoes.svg';
 import Phone from '../assets/phone.svg';
 import Button from '../components/Button';
+import Table from '../components/Table';
+import Loading from '../components/Loading';
+import useProducts from '../hooks/useProducts';
 
 const MainPage = () => {
-  /**
-   * TODO: criar um crud para buscar, listar, enviar e atualizar produtos da https://fakestoreapi.com/
-   *  */
-  const TableLines = () => {
-    const arr: any = [];
+  const { products, isLoading, isResolved, error } = useProducts();
 
-    products.forEach((p: any, index) => {
-      arr.push(
-        <tr key={index}>
-          <td>{p['name']}</td>
-          <td>{p['price']}</td>
-          <td>
-            <Button variant="text">Comprar</Button>
+  const TableLines = () => {
+    if (isResolved)
+      return products?.length ? (
+        products.map((item) => (
+          <tr key={item.id}>
+            <td>{item.title}</td>
+            <td>{item.price}</td>
+            <td>{item.category}</td>
+            <td>{item.description}</td>
+            <td>
+              <Button variant="text">Contratar</Button>
+            </td>
+          </tr>
+        ))
+      ) : (
+        <tr>
+          <td colSpan={6} align="center">
+            <span>No products found</span>
           </td>
         </tr>
       );
-    });
 
-    return arr;
+    if (isLoading)
+      return (
+        <tr>
+          <td colSpan={6} align="center">
+            <Loading />
+          </td>
+        </tr>
+      );
+
+    return (
+      <tr>
+        <td colSpan={6} align="center">
+          <span className={styles.Error}>{error}</span>
+        </td>
+      </tr>
+    );
   };
-
-  const products = [
-    {
-      name: 'produto 01',
-      price: 1234,
-    },
-    {
-      name: 'produto 02',
-      price: 1234,
-    },
-    {
-      name: 'produto 03',
-      price: 1234,
-    },
-  ];
 
   return (
     <div className={styles.MainPage} data-testid="MainPage">
@@ -53,18 +62,12 @@ const MainPage = () => {
           </Widget>
         </div>
 
-        <div className="produtos">
-          <table>
-            <thead>
-              <tr>
-                <td>Produto</td>
-                <td>Preço</td>
-                <td>Ações</td>
-              </tr>
-            </thead>
-            <tbody>{TableLines()}</tbody>
-          </table>
-        </div>
+        <Table
+          title="Conheça nossos produtos"
+          headers={['produto', 'preço', 'categoria', 'descrição', '']}
+        >
+          {TableLines()}
+        </Table>
 
         <div className={styles.MainFooter}>
           <Widget color="light-green">

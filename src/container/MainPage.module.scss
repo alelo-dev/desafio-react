@@ -75,6 +75,10 @@
   }
 }
 
+.Error {
+  color: var(--red);
+}
+
 @media (min-width: 768px) {
   .MainHeader {
     padding: 40px 16px 0;

@@ -1,50 +1,46 @@
-# Sobre
-Desafio prático da etapa seleção de candidatos a vagas de desenvolvimento frontend com React na Alelo. Este projeto foi construído com [React](https://github.com/facebook/create-react-app). Por favor, não atualize a versão do projeto e das bibliotecas.
+# Desafio React
 
-## Objetivo
-Avaliar sua capacidade analítica diante de problemas que podem ser encontrados no dia-a-dia da empresa, conhecer um pouco da sua experiência com React e TypeScript, a aplicação de conceitos como mobile first, responsividade e websemântica, além do uso de boas práticas e design de software.
+Projeto criado com React, TypeScript e Material-UI para o desafio técnico da Compasso UOL.
 
-## Orientações
-Realize um fork do projeto, clone-o e execute-o em sua máquina local. Para o teste, você pode utilizar a IDE de sua preferência. Avalie o código do projeto e se julgar necessário, faça as devidas mudanças e envie um pull request para nós!
+## Bibliotecas Utilizadas
 
-## Desafios
-Os desafios estão divididos em três pontos:
+- [@emotion/react](https://www.npmjs.com/package/@emotion/react)
+- [@emotion/styled](https://www.npmjs.com/package/@emotion/styled)
+- [@mui/material](https://www.npmjs.com/package/@mui/material)
+- [@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom)
+- [@testing-library/react](https://www.npmjs.com/package/@testing-library/react)
+- [@testing-library/user-event](https://www.npmjs.com/package/@testing-library/user-event)
+- [@types/jest](https://www.npmjs.com/package/@types/jest)
+- [@types/node](https://www.npmjs.com/package/@types/node)
+- [@types/react](https://www.npmjs.com/package/@types/react)
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom)
+- [@types/styled-components](https://www.npmjs.com/package/@types/styled-components)
+- [axios](https://www.npmjs.com/package/axios)
+- [react](https://www.npmjs.com/package/react)
+- [react-dom](https://www.npmjs.com/package/react-dom)
+- [react-number-format](https://www.npmjs.com/package/react-number-format)
+- [react-numeric-input](https://www.npmjs.com/package/react-numeric-input)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [react-scripts](https://www.npmjs.com/package/react-scripts)
+- [react-switch](https://www.npmjs.com/package/react-switch)
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
+- [styled-components](https://www.npmjs.com/package/styled-components)
+- [typescript](https://www.npmjs.com/package/typescript)
+- [web-vitals](https://www.npmjs.com/package/web-vitals)
 
-**Estilização e websemântica:** Deixamos um Layout para que você possa implementar (os arquivos estão disponíveis dentro do diretório **src/assets**), é super simples e rápido de fazer :);
+## Como executar o projeto
 
-**Conhecimento do framework e consumo de dados por serviços:** Para conhecermos melhor o seu jeito de codar, você pode fazer um CRUD simples com a [fakestore](https://fakestoreapi.com/), deixamos um TODO no arquivo para ajudar :);
+1. Clone este repositório em sua máquina local.
+2. No diretório do projeto, execute o comando `npm install` para instalar as dependências.
+3. Em seguida, execute o comando `npm start` para iniciar a aplicação em modo de desenvolvimento.
+4. Abra o endereço [http://localhost:3000](http://localhost:3000) no navegador para visualizar o projeto.
 
-**Boas práticas e padrões de projeto:** Pode haver alguns desafios no código, queremos conhecer de perto as suas soluções para estes problemas; 
+## Como contribuir
 
-**Não se preocupe em realizar todos os steps propostos, faça os quais você se sentir mais confortável para realizar.**
+1. Faça um **fork** deste repositório.
+2. Crie uma nova branch com suas modificações: `git checkout -b minha-branch`
+3. Faça as modificações desejadas e realize os testes.
+4. Commit suas alterações: `git commit -m 'Minhas modificações'`
+5. Envie para a branch original: `git push origin minha-branch`
+6. Crie um novo **Pull Request** explicando suas modificações e aguarde a revisão.
 
-## assets
-![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_desktop.png?raw=true)
-
-![alt text](https://github.com/alelo-dev/desafio-react/blob/master/src/assets/ui_mobile.png?raw=true)
-
-## Scripts Disponíveis
-
-No diretório do projeto, você pode executar:
-
-### `yarn start`
-
-Execute o app em modo de desenvolvimento.\
-Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
-
-### `yarn test`
-
-Executar o test runner em modo interativo.\
-veja mais em [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
-
-### `yarn build`
-
-Builds do app para produção, acesse o diretório `build`
-
-veja mais em [deployment](https://facebook.github.io/create-react-app/docs/deployment).
-
-## Saiba mais
-
-Você pode aprender mais em [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-para aprender React, veja mais em [React documentation](https://reactjs.org/).

@@ -1,0 +1,58 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+#home-page {
+  .row-widget {
+    @include flexAlign();
+
+    @include device('sm') {
+      padding: 1.5em 0;
+    }    
+  }
+
+  section.products {
+    margin: 0.25em 0;
+
+    h5 {
+      color: $secondary-color;
+      margin: 0 1em;
+    }
+
+    .wrapper-table {
+      margin-top: 0.5em;
+      max-height: 40vh;
+      overflow: auto;
+
+    }
+
+    @include device('sm') {
+      margin: 2.5em 0;
+    }
+  }
+
+  .row-widgets {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 0.5em 0;
+    padding: 0 0.5em;
+    width: 100%;
+  
+    div {    
+      margin: 0.75em 0;
+      width: 100%;
+    }
+  
+    @include device('sm') {
+      display: flex;
+      gap: 1.5em;
+      padding: 1em 0.75em;
+  
+      div {    
+        display: flex;
+        flex: 1;
+        margin: 0 0;
+      }
+    }
+  }
+}
+

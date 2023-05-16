@@ -1,0 +1,53 @@
+@import 'variables';
+@import "./mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  height: 100vh;
+  display: block;
+  padding: 0.5em;
+  
+  @include device('sm') {
+    padding-top: 2em;
+  }
+}
+
+.container-content {
+  background-color: white;
+  border-radius: calc(#{$radius-base} * 2);
+  box-shadow: -1px 1px 6px -2px #c1c1c1;
+  -webkit-box-shadow: -1px 1px 6px -2px #c1c1c1;
+  -moz-box-shadow: -1px 1px 6px -2px #c1c1c1;
+  margin: auto auto;
+
+  @include device('sm') {
+    width: 80%;
+  }
+}
+
+.loading {
+  padding: 0.5em;
+}
+
+.button-to-hire {
+  color: $secondary-color;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

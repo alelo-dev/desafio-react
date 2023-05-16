@@ -1,0 +1,79 @@
+@import '../mixins.scss';
+@import "../variables";
+
+
+#widget {
+    width: 100%;
+
+    @include device('sm') {
+        width: fit-content;
+    }
+
+    .wrapper {
+        border-radius: calc(#{$radius-base} * 4);
+        text-align: center;
+    }
+
+    .card {
+        @include flexAlign();
+        background-color: $primary-color;
+        color: $primary-dark-color;
+        padding: 0.75em;
+        
+        p {
+            line-height: 1.5em;
+            font-weight: bold;
+            font-size: $font-size-base;
+        }
+    }
+
+    .info {
+        @include flexAlign(center, column, space-between);
+        background-color: $secondary-color;
+        padding: 0.75em;
+
+        a img.image-help-me {
+            width: 7em;
+        }
+        
+        h3 {
+            color: $primary-color; 
+        }
+
+        p {
+            color: $primary-light-color;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0.5em;
+        }
+    }
+
+    .special-offer {
+        @include flexAlign(center, column, center);
+        background-color: $secondary-color;
+        margin: 0.5em;
+        padding: 0.5em 1em;
+        min-height: 100px;
+
+        a img.image-cards {
+            width: 7em;
+            margin-top: 0.25;
+        }
+
+        h3 {
+            color: $primary-light-color; 
+            margin: 0.25 0;
+        }
+    
+        @include device('sm') {
+        @include flexAlign(center, row, center);
+        gap: 1em;
+        margin: 0 0;
+        width: fit-content;
+
+        h3 {
+            margin: 0;
+        }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "../variables";
+
+table {
+  border-collapse: collapse;
+  color: $secondary-dark-color;
+  font-size: 0.9em;
+}
+
+thead tr {
+  border-bottom: 1px solid #f7f7f7;
+  text-transform: uppercase;
+}
+
+th, td {
+  padding: 1em;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}

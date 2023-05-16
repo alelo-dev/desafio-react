@@ -18,8 +18,13 @@ body {
 }
 
 .container {
-  @include flexAlign();
   height: 100vh;
+  display: block;
+  padding: 0.5em;
+  
+  @include device('sm') {
+    padding-top: 2em;
+  }
 }
 
 .container-content {
@@ -28,9 +33,21 @@ body {
   box-shadow: -1px 1px 6px -2px #c1c1c1;
   -webkit-box-shadow: -1px 1px 6px -2px #c1c1c1;
   -moz-box-shadow: -1px 1px 6px -2px #c1c1c1;
-  margin: calc(#{$margin-base} * 2);
+  margin: auto auto;
 
   @include device('sm') {
     width: 80%;
   }
+}
+
+.loading {
+  padding: 0.5em;
+}
+
+.button-to-hire {
+  color: $secondary-color;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }

@@ -7,15 +7,15 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./App";
 
 // Routes
-import HomePage from "./pages/home/homePage";
-import Page404 from "./pages/notFound/notFound";
+import HomePage from "./pages/home/HomePage";
+import Page404 from "./pages/notFound/NotFound";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App>
         <Switch>
-          <Route exact path="/" children={HomePage} />
+          <Route exact path="/" children={<HomePage />} />
           <Route children={Page404} />
         </Switch>
       </App>

@@ -1,45 +1,51 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
-#main {
+#home-page {
   .row-widget {
     @include flexAlign();
 
     @include device('sm') {
-      margin: calc(#{$margin-base} * 8) 0;
-    }
+      padding: 1.5em 0;
+    }    
   }
 
   section.products {
-    margin: $margin-base 0;
+    margin: 0.25em 0;
 
     h5 {
       color: $secondary-color;
-      margin: 0 calc(#{$margin-base} * 4);
+      margin: 0 1em;
+    }
+
+    .wrapper-table {
+      margin-top: 0.5em;
+      max-height: 40vh;
+      overflow: auto;
+
     }
 
     @include device('sm') {
-      margin: calc(#{$margin-base} * 14) 0;
+      margin: 2.5em 0;
     }
   }
 
-  
   .row-widgets {
     flex-basis: 0;
     flex-grow: 1;
-    margin: calc(#{$margin-base} * 2) 0;
-    padding: 0 calc(#{$padding-base} * 2);
+    margin: 0.5em 0;
+    padding: 0 0.5em;
     width: 100%;
   
     div {    
-      margin: calc(#{$margin-base} * 3) 0;
+      margin: 0.75em 0;
       width: 100%;
     }
   
     @include device('sm') {
       display: flex;
       gap: 1.5em;
-      margin: calc(#{$margin-base} * 4) 0;
+      padding: 1em 0.75em;
   
       div {    
         display: flex;

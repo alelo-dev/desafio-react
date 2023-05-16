@@ -1,52 +1,23 @@
-import React from "react";
 import "../../styles/components/table.scss";
 
-const Table = () => {
-  const TableLines = () => {
-    const arr: any = [];
+interface Props {
+  header: string[];
+  rows: HTMLTableRowElement;
+}
 
-    products.forEach((p: any, index) => {
-      arr.push(
-        <tr key={index}>
-          <td>{p["name"]}</td>
-          <td>{p["price"]}</td>
-          <td>
-            <button>Comprar</button>
-          </td>
-        </tr>
-      );
-    });
-
-    return arr;
-  };
-
-  const products = [
-    {
-      name: "produto 01",
-      price: 1234,
-    },
-    {
-      name: "produto 02",
-      price: 1234,
-    },
-    {
-      name: "produto 03",
-      price: 1234,
-    },
-  ];
-
+const Table = (props: Props) => {
   return (
     <table>
       <thead>
         <tr>
-          <th>Produto</th>
-          <th>Preço</th>
-          <th>Ações</th>
+          {props.header.map((head: string) => {
+            return <th key={head}>{head}</th>;
+          })}
         </tr>
       </thead>
-      <tbody>{TableLines()}</tbody>
+      <tbody>{props.rows}</tbody>
     </table>
   );
 };
 
-export default React.memo(Table);
+export default Table;

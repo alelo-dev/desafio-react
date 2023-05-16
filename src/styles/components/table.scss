@@ -1,6 +1,9 @@
+@import "../variables";
+
 table {
   border-collapse: collapse;
-  width: 100%;
+  color: $secondary-dark-color;
+  font-size: 0.9em;
 }
 
 thead tr {
@@ -10,7 +13,7 @@ thead tr {
 
 th, td {
   padding: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 th {

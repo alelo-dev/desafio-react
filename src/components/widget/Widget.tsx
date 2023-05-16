@@ -5,7 +5,11 @@ import button from "../../assets/button.png";
 
 import "../../styles/components/widget.scss";
 
-const Widget = (props: any) => (
+interface Props {
+  widget: string;
+}
+
+const Widget = (props: Props) => (
   <div data-testid="Widget" id="widget">
     {props.widget === "special-offer" && (
       <div className="wrapper special-offer">

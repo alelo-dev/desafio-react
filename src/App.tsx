@@ -1,10 +1,11 @@
-import React from 'react';
-import './App.css';
-import MainPage from './container/MainPage';
+import { ReactNode } from "react";
+import "./styles/main.scss";
 
-function App() {
+function App({ children }: { children?: ReactNode }) {
   return (
-    <MainPage />
+    <div className="container">
+      <div className="container-content">{children}</div>
+    </div>
   );
 }
 

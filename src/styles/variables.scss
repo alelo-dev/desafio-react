@@ -1,0 +1,29 @@
+// Colors
+$primary-color: #BDD753;
+$secondary-color: #0E7F61;
+
+$primary-dark-color: #505050;
+$secondary-dark-color: #696969;
+
+$primary-light-color: #F7F7F7;
+
+
+// Spacing
+$margin-base: 0.25em;
+$padding-base: 0.25em;
+
+// Font size
+$font-size-base: 14px;
+
+// Radius
+$radius-base: 0.25em;
+
+// Breakpoints
+$breakpoints: (
+  sm: (min-width: 640px),
+  md: (min-width: 768px),
+  lg: (min-width: 1024px),
+  xl: (min-width: 1280px),
+  2xl: (min-width: 1536px),
+)
+

@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead tr {
+  border-bottom: 1px solid #f7f7f7;
+  text-transform: uppercase;
+}
+
+th, td {
+  padding: 1em;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}

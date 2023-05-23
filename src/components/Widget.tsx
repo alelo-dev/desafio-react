@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Widget.module.scss';
 import imgCard from '../assets/cartoes.png';
 import imgAjuda from '../assets/button.png';
+import Button from "../components/Button/Button";
 
 interface WidgetProps {
   widget: string;
@@ -11,13 +12,13 @@ const Widget: React.FC<WidgetProps> = ({ widget }) => {
   const renderPromoWidget = () => (
     <div id="promo" className={styles.promo}>
       <h2>Peça seu cartão Alelo!</h2>
-      <img src={imgCard} alt='Cartões Alelo' />
+        <img src={imgCard} alt='Cartões Alelo' />
     </div>
   );
 
   const renderCardWidget = () => (
     <div id="card" className={styles.card}>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <p>Aqui na Alelo, você Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua! :&#41; </p>
     </div>
   );
 

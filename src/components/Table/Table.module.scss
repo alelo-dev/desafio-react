@@ -1,8 +1,12 @@
+.tableContainer {
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
 .table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  //border: 1px solid #ddd;
 
   thead {
     border-bottom: 1px solid #f7f7f7;
@@ -27,51 +31,12 @@
   tr:nth-child(even) {
     background-color: #f7f7f7;
   }
-
-  @media (max-width: 767px) {
-    display: block;
-    position: relative;
-    width: 100%;
-
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
-      display: block;
-    }
-    td,
-    th {
-      height: 5px;
-    }
-
-    thead {
-      float: left;
-    }
-
-    tbody {
-      width: auto;
-      position: relative;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      white-space: nowrap;
-    }
-
-    tbody tr {
-      display: inline-block;
-    }
-
-    .table td:last-child {
-      border-right: #999999 solid 1px;
-    }
-  }
 }
 
 .renderMsg {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   padding: 16px;
   display: flex;
   justify-content: center;
@@ -79,4 +44,21 @@
   font-size: 16px;
   color: #0e7f61;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .tableContainer {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .table {
+    display: inline-table;
+  }
+
+  td,
+  th {
+    white-space: nowrap;
+    min-width: 150px;
+  }
 }

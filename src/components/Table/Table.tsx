@@ -18,10 +18,10 @@ const Table: React.FC<ProductsProps> = ({ products }) => {
     <>
       <thead>
         <tr>
-          <th>Produto</th>
-          <th>Preço</th>
-          <th>Categoria</th>
-          <th>Descrição</th>
+          <th>PRODUTO</th>
+          <th>PREÇO</th>
+          <th>CATEGORIA</th>
+          <th>DESCRIÇÃO</th>
           <th></th>
         </tr>
       </thead>
@@ -49,9 +49,11 @@ const Table: React.FC<ProductsProps> = ({ products }) => {
   );
 
   return (
-    <table className={styles.table}>
-      {products.length > 0 ? renderTableContent() : renderLoadingMessage()}
-    </table>
+    <div className={styles.tableContainer}>
+      <table className={styles.table}>
+        {products.length > 0 ? renderTableContent() : renderLoadingMessage()}
+      </table>
+    </div>
   );
 };
 

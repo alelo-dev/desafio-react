@@ -1,10 +1,14 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 
 const LazyWidget = lazy(() => import('./Widget'));
 
-const Widget = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
+interface WidgetProps {
+  widget: string;
+}
+
+const Widget = (props: WidgetProps) => (
   <Suspense fallback={null}>
-    <LazyWidget {...props} />
+    <LazyWidget widget={props.widget} />
   </Suspense>
 );
 
